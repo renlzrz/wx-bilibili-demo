@@ -6,12 +6,14 @@
       <text>{{videoInfo.videoTitle}}</text>
       <text class="fa fa-angle-down"></text>
     </view>
+    <!--视频详情-->
     <view class="video-detail">
       <text class="author">{{videoInfo.author}}</text>
       <text class="play-count">{{videoInfo.playCount}}播放</text>
       <text class="comment-count">{{videoInfo.commentCount}}弹幕</text>
       <text class="date">{{videoInfo.date}}</text>
     </view>
+    <!--推荐视频-->
     <view class="other-list">
       <navigator class="item-other" wx:for="{{othersList}}" wx:key="{{index}}">
         <view class="other-img-wrap">
@@ -26,6 +28,7 @@
         </view>
       </navigator>
     </view>
+    <!--视频评论-->
     <view class="comment-wrap">
       <view class="comment-title">
         评论( {{commentData.commentTotalCount}} )

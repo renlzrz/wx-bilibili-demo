@@ -16,7 +16,6 @@ Page({
     wx.request({
       url: 'https://easy-mock.com/mock/5c1dfd98e8bfa547414a5278/bili/videoDetail?id='+videoId,
       success(res){
-        //console.log(res);
         if(res.data.code === 0) {
           _this.setData({
             videoInfo: res.data.data.videoInfo
